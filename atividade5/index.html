@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Agendamento</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light py-4">
+
+  <div class="container">
+    <h1 class="text-center mb-4">Agendamento</h1>
+
+    <form id="formAgendamento" class="bg-white p-4 rounded shadow-sm">
+      
+      <!-- Dados do paciente -->
+      <h4 class="mb-3">Dados do paciente</h4>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="nome" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nome" required>
+        </div>
+        <div class="col-md-6">
+          <label for="sobrenome" class="form-label">Sobrenome</label>
+          <input type="text" class="form-control" id="sobrenome" required>
+        </div>
+        <div class="col-md-6">
+          <label for="cpf" class="form-label">CPF</label>
+          <input type="text" class="form-control" id="cpf" required>
+        </div>
+        <div class="col-md-6">
+          <label for="nascimento" class="form-label">Data de nascimento</label>
+          <input type="date" class="form-control" id="nascimento" required>
+        </div>
+        <div class="col-md-6">
+          <label for="telefone" class="form-label">Telefone</label>
+          <input type="tel" class="form-control" id="telefone" required>
+        </div>
+        <div class="col-md-6">
+          <label for="cep" class="form-label">CEP</label>
+          <input type="text" class="form-control" id="cep" required>
+        </div>
+        <div class="col-12">
+          <label for="endereco" class="form-label">Endereço</label>
+          <input type="text" class="form-control" id="endereco" required>
+        </div>
+      </div>
+
+      <!-- Dados da consulta -->
+      <h4 class="mt-4 mb-3">Dados da consulta</h4>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="clinica" class="form-label">Clínica</label>
+          <select class="form-select" id="clinica" required>
+            <option value="">Selecione</option>
+            <option value="clinicaA">Clínica A</option>
+            <option value="clinicaB">Clínica B</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label for="especialidade" class="form-label">Especialidade</label>
+          <select class="form-select" id="especialidade" required>
+            <option value="">Selecione</option>
+            <option value="cardiologia">Cardiologia</option>
+            <option value="dermatologia">Dermatologia</option>
+          </select>
+        </div>
+        <div class="col-md-6">
+          <label for="dataConsulta" class="form-label">Data</label>
+          <input type="date" class="form-control" id="dataConsulta" required>
+        </div>
+        <div class="col-md-6">
+          <label for="horaConsulta" class="form-label">Hora</label>
+          <input type="time" class="form-control" id="horaConsulta" required>
+        </div>
+        <div class="col-12">
+          <label for="observacao" class="form-label">Observação</label>
+          <textarea class="form-control" id="observacao" rows="3"></textarea>
+        </div>
+      </div>
+
+      <!-- Botão -->
+      <div class="mt-4 text-center">
+        <button type="submit" class="btn btn-primary px-5">Enviar</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
